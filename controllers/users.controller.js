@@ -9,6 +9,8 @@ exports.login = async (req, res) => {
 };
 
 exports.logout = async (req, res) => {
+  res.clearCookie("au");
+  res.clearCookie("rau");
   res.json({
     status: "ok",
   });
