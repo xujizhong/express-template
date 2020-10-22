@@ -12,7 +12,7 @@ const indexRouter = require("./routes/index");
 const app = express();
 
 //cors
-app.use(cors({ origin: "http://localhost:8080", credentials: true }));
+app.use(cors({ origin: "*", credentials: true }));
 
 //middleware
 app.use(logger("dev"));
